@@ -37,20 +37,23 @@ repo, but if you want/need to build it:
 You can double check your package with: `dpkg-deb --info <deb file>`
 
 ```bash
-pi@mario opencv3 $ dpkg-deb --info libopencv3.4.0.deb
+pi@cyborg zeromq $ sudo ./build-pkg.sh 4.2.2
+building OpenCV 4.2.2
+dpkg-deb: building package 'zeromq-kevin' in 'libzmq-4.2.2.deb'.
+
+reading debian package: \n
  new debian package, version 2.0.
- size 7369108 bytes: control archive=651 bytes.
-     159 bytes,     7 lines   *  control              
-     292 bytes,    10 lines      copyright            
+ size 4839512 bytes: control archive=403 bytes.
+     153 bytes,     7 lines   *  control              
        6 bytes,     1 lines   *  install              
-     512 bytes,    25 lines   *  postinst             #!/bin/bash
- Package: opencv
+     153 bytes,    10 lines   *  postinst             #!/bin/bash
+ Package: zeromq-kevin
  Architecture: all
  Maintainer: Kevin
  Depends: debconf (>= 0.5.00)
  Priority: optional
- Version: 3.4.0
- Description: Kevins computer vision library
+ Version: 4.2.2
+ Description: Kevins zmq library
  ```
 
 ## Install
