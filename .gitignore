@@ -1,0 +1,11 @@
+build/
+.DS_Store
+._*
+old.*
+old/
+*.pycy
+zeromq/zeromq-*
+zeromq/zeromq-dpkg/usr/*
+__pycache__
+*.tar.gz
+*.pyc
