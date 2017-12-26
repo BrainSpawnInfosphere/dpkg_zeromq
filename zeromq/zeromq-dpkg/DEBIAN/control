@@ -1,0 +1,7 @@
+Package: zeromq-kevin
+Architecture: all
+Maintainer: Kevin
+Depends: debconf (>= 0.5.00)
+Priority: optional
+Version: 4.2.2
+Description: Kevins zmq library
