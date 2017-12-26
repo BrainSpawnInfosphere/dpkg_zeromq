@@ -1,8 +1,15 @@
 #!/usr/bin/env bash
 
-if [[ $# -ne 2 ]]; then
+# check if we are root
+if [ "$EUID" -ne 0 ] ; then
+  echo "Please run as root"
+  exit 1
+fi
+
+if [[ $# -ne 1 ]]; then
   echo "Please supply an OpenCV version number"
   echo "ex: ./build-zmq.sh 1.2.3"
+  exit 1
 fi
 
 echo "$USER"
